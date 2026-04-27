@@ -11,6 +11,7 @@ header{
     align-items: center;
     font-size: 2rem;
     color: white;
+    background-color: black;
 }
 
 #jeff1{
@@ -23,3 +24,23 @@ header{
     margin-top: 20px;
 }
 
+nav{
+   background-color:#343a40;
+    text-align: center;
+    padding: 12px 0;
+
+}
+
+nav a{
+   text-decoration: none;
+    color:white;
+    margin:0 20px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+nav a:hover{
+    color: blue;
+    transition: color 0.3s ease;
+}
