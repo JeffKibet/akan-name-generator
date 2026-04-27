@@ -22,12 +22,15 @@ header{
     color: white;
     text-align: center;
     margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav{
-   background-color:#343a40;
+   background-color:#2c343b;
     text-align: center;
-    padding: 12px 0;
+    padding: 12px 5px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -45,3 +48,45 @@ nav a:hover{
     transition: color 0.3s ease;
 }
 
+form{
+    max-width: 650px;
+    margin: 24px auto;
+}
+
+form label{
+    font-size: 18px;
+    color: white;
+}
+
+
+
+#birth-date{
+    display: flex;
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#male{
+    margin-top: 10px
+}
+
+#female{
+    margin-top: 10px;
+}
+
+button{
+  background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: blue;
+    transition: background-color 0.3s ease;
+}
