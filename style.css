@@ -2,5 +2,12 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: gray
+    background-color: rgb(51, 46, 46)
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
 }
