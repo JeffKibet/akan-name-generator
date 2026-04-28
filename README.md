@@ -1,7 +1,7 @@
 Akan Name Generator
 
 Author
-Jeff Kibet
+Jeff Kibet - +254714006899 -Jefferykibet@gmail.com
 
 Description of Project
 
@@ -26,3 +26,14 @@ Technologies used
  HTML- This is for the structure
  CSS- For styling
  JavaScript- For interaction
+
+
+ Project Setup Instructions
+ 1. Clone the Repository
+ 2. Navigate into the Project Folder
+ 3. Open the Project in browser
+
+ or
+
+ clck the link below
+ 
