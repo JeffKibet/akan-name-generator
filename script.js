@@ -11,16 +11,29 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     // get input values
-    const birthDate = document.getElementById("birthdate").value;
-    const gender = document.getElementById("gender").value;
+    const birthDate = document.getElementById("birth-date").value;
+    const gender = document.querySelector("input[name='gender']:checked");
 
+    // validation for birth date and gender
+if (!birthDate) {
+    alert("Please enter your birth date.");
+    return;
+}
 
+if (!gender) {
+    alert("Please select your gender.");
+    return;
+}
 
     // Day, Month and Year
-    const day = new Date(birthDate).getDate();
-   let DD = Date.getDate();
-   let MM = Date.getMonth() + 1; // Months start from 0
-   let YYYY = Date.getFullYear()
+   const date = new Date(birthDate);
+
+// //    get the day of the week
+// const date = date.getDay();
+
+   let DD = date.getDate();
+   let MM = date.getMonth() + 1;
+   let YYYY = date.getFullYear();
 
 //    validation
 if (DD < 1 || DD > 31) {
@@ -38,7 +51,7 @@ if (DD < 1 || DD > 31) {
     let YY = YYYY % 100;
 
     // Calculation using the formula
-    let d =  ((CC / 4 - 2 * CC - 1) +
+    let d =Math.floor ((CC / 4 - 2 * CC - 1) +
       (5 * YY) / 4 +
       (26 * (MM + 1)) / 10 +
       DD) % 7
@@ -47,10 +60,6 @@ if (DD < 1 || DD > 31) {
     if (d < 0) {
         d = (d + 7) % 7;
     }
-
-    // Get Akan name
-    const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-    const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
     // get the selected gender
     const selectedGender = gender.value;
@@ -67,5 +76,8 @@ if (DD < 1 || DD > 31) {
     }
 
     // Display the Akan name
-    alert(`Your Akan name is: ${akanName}`);
-}
+     document.querySelector(".result").innerHTML = `
+    <h3>Your Akan Name is: ${akanName}</h3>
+    <p>Born on day number: ${d}</p>
+  `;
+});
