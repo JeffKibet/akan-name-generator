@@ -36,3 +36,18 @@ if (DD < 1 || DD > 31) {
 //   to split the year
     let CC = Math.floor(YYYY / 100);
     let YY = YYYY % 100;
+
+    // Calculation using the formula
+    let d =  ((CC / 4 - 2 * CC - 1) +
+      (5 * YY) / 4 +
+      (26 * (MM + 1)) / 10 +
+      DD) % 7
+
+    //   To avoid negative day index
+    if (d < 0) {
+        d = (d + 7) % 7;
+    }
+
+    // Get Akan name
+    const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
