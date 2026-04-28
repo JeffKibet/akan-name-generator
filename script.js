@@ -14,7 +14,25 @@ form.addEventListener("submit", (event) => {
     const birthDate = document.getElementById("birthdate").value;
     const gender = document.getElementById("gender").value;
 
+
+
     // Day, Month and Year
     const day = new Date(birthDate).getDate();
-    const month = new Date(birthDate).getMonth() + 1; // Months start from 0
-    const year = new Date(birthDate).getFullYear();
+   let DD = Date.getDate();
+   let MM = Date.getMonth() + 1; // Months start from 0
+   let YYYY = Date.getFullYear()
+
+//    validation
+if (DD < 1 || DD > 31) {
+    alert("Please enter a valid day (1-31).");
+    return;
+  }
+
+  if (MM < 1 || MM > 12) {
+    alert ("Please enter a valid month (1-12).");
+    return;
+  }
+
+//   to split the year
+    let CC = Math.floor(YYYY / 100);
+    let YY = YYYY % 100;
