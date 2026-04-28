@@ -36,4 +36,4 @@ Technologies used
  or
 
  clck the link below
- 
+ https://jeffkibet.github.io/akan-name-generator/
