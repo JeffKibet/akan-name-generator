@@ -4,6 +4,7 @@ const form = document.querySelector('form');
 // Akan names
 const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 // Listen for form submission
 form.addEventListener("submit", (event) => {
@@ -78,6 +79,7 @@ if (DD < 1 || DD > 31) {
     // Display the Akan name
      document.querySelector(".result").innerHTML = `
     <h3>Your Akan Name is: ${akanName}</h3>
-    <p>Born on day number: ${d}</p>
+    <p>You were born on: ${daysOfWeek[d]}</p>
+    <p>Day index: ${d}</p>
   `;
 });
