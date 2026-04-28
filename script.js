@@ -11,4 +11,10 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     // get input values
-    const birthDate = document.querySelector("birthdate").value;
+    const birthDate = document.getElementById("birthdate").value;
+    const gender = document.getElementById("gender").value;
+
+    // Day, Month and Year
+    const day = new Date(birthDate).getDate();
+    const month = new Date(birthDate).getMonth() + 1; // Months start from 0
+    const year = new Date(birthDate).getFullYear();
