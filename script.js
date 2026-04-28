@@ -51,3 +51,6 @@ if (DD < 1 || DD > 31) {
     // Get Akan name
     const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+    // get the selected gender
+    const selectedGender = gender.value;
