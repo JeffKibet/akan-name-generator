@@ -54,3 +54,18 @@ if (DD < 1 || DD > 31) {
 
     // get the selected gender
     const selectedGender = gender.value;
+
+    let akanName;
+
+    if (selectedGender === "male") {
+        akanName = maleNames[d];
+    } else if (selectedGender === "female") {
+        akanName = femaleNames[d];
+    } else {
+        alert("Please select a gender.");
+        return;
+    }
+
+    // Display the Akan name
+    alert(`Your Akan name is: ${akanName}`);
+}
