@@ -37,3 +37,7 @@ Technologies used
 
  clck the link below
  https://jeffkibet.github.io/akan-name-generator/
+
+ License
+
+This project is created for educational and learning purposes.
