@@ -2,7 +2,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(51, 46, 46)
+    background-color: #0d072a
 }
 
 header{
@@ -24,6 +24,20 @@ section{
     transition: box-shadow 0.3s ease;
 }
 
+section:hover{
+    box-shadow: 0 4px 20px rgba(153, 82, 82, 0.2);
+}
+
+#jjj{
+    background-color: #2c343b;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: white;
+}
+
+#jjj:hover{
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
 #jeff1{
     display: flex;
     justify-content: center;
@@ -125,4 +139,11 @@ h2{
     color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+     background-color: black;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
 }

@@ -80,6 +80,6 @@ if (DD < 1 || DD > 31) {
      document.querySelector(".result").innerHTML = `
     <h3>Your Akan Name is: ${akanName}</h3>
     <p>You were born on: ${daysOfWeek[d]}</p>
-    <p>Day index: ${d}</p>
+    <p>Day: ${d}</p>
   `;
 });
