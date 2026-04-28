@@ -141,6 +141,12 @@ h2{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#kkk{
+    background-color: #2c343b;
+    border-radius: 8px;
+    padding: 20px;
+}
+
 footer{
      background-color: black;
     color: white;
