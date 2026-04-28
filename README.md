@@ -19,11 +19,10 @@ The application:
 - Displays the correct Akan name and birth day
 
 
-Project Setup Instructions
 
-Follow these steps to run the project locally:
 
 Technologies used
+
  HTML- This is for the structure
  CSS- For styling
  JavaScript- For interaction
